@@ -1,0 +1,104 @@
+.navbar__btn {
+  @include respond(tablet_phone) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: $white-color;
+    cursor: pointer;
+    // svg {
+    //   width: 2.8rem;
+    //   height: 2.8rem;
+    // }
+    &:hover{
+      background-color: $primary-color;
+      color: $white-color;
+    }
+  }
+  .navbar__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+  }
+  .navbar__mobile-close {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    color: $black-color;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    cursor: pointer;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  .navbar__mobile {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: $bg-img;
+    width: 480px;
+    max-width: 100%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.3s;
+    .footer{
+      padding: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .navbar__mobile-list {
+    margin-top: 24px;
+  }
+  .navbar__mobile-link {
+    text-align: center;
+    color: $black-color;
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 20px 40px;
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+    &:hover {
+      color: $primary-color;
+      fill: $primary-color;
+    }
+  }
+  .navbar__input:checked ~ .navbar__overlay {
+    display: block;
+  }
+  .navbar__input:checked ~ .navbar__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

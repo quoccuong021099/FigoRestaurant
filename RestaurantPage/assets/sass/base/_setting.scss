@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  body {
+    font-family: $title-font;
+    font-weight: 300;
+    color: black;
+    background-color: white;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}

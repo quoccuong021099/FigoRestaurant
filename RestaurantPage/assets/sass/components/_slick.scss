@@ -1,0 +1,64 @@
+.slick-prev,
+.slick-arrow,
+.slick-next {
+  color: #fff !important;
+  top: 44rem !important;
+  right: 1.5rem !important;
+  box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.38);
+  padding: 2.5rem !important;
+  &:hover {
+    background-color: $secondary-color !important;
+  }
+}
+.slick-next {
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: $primary-color !important;
+  @media screen and (max-width: 1239px) {
+    left: 70rem !important;
+  }
+  @include respond(tablet) {
+    left: 50% !important;
+  }
+  @include respond(phone) {
+    visibility: hidden;
+  }
+}
+.slick-prev {
+  background-color: $light-color !important;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  left: 78rem !important;
+  @media screen and (max-width: 1239px) {
+    left: 64rem !important;
+  }
+  @include respond(tablet) {
+    left: 43% !important;
+  }
+  @include respond(phone) {
+    visibility: hidden;
+  }
+  
+}
+.slick-prev::before {
+  content: "\276E " !important;
+  display: block !important;
+  margin-right: 100px !important;
+  line-height: unset !important;
+  color: $black-color !important;
+  width: 50px !important;
+  height: 50px  !important;
+  position: absolute;
+  left: 0;
+  &:hover{
+      color: $white-color !important;
+  }
+}
+.slick-next::before {
+  content: " \276F" !important;
+  line-height: unset !important;
+  width: 50px !important;
+  height: 50px  !important;
+  position: absolute;
+  left: 0;
+}

@@ -1,0 +1,20 @@
+let leaves = document.getElementById('leaves');
+let parallaxInstance = new Parallax(leaves);
+let leaves1 = document.getElementById('leaves_1');
+let parallaxInstance1 = new Parallax(leaves1);
+let leaves2 = document.getElementById('leaves_2');
+let parallaxInstance2 = new Parallax(leaves2);
+let leaves3 = document.getElementById('leaves_3');
+let parallaxInstance3 = new Parallax(leaves3);
+let leaves4 = document.getElementById('leaves_4');
+let parallaxInstance4 = new Parallax(leaves4);
+let leaves5 = document.getElementById('leaves_5');
+let parallaxInstance5 = new Parallax(leaves5);
+let leaves6 = document.getElementById('leaves_6');
+let parallaxInstance6 = new Parallax(leaves6);
+let leaves7 = document.getElementById('leaves_7');
+let parallaxInstance7 = new Parallax(leaves7);
+let leaves8 = document.getElementById('leaves_8');
+let parallaxInstance8 = new Parallax(leaves8);
+// let arr = ['leaves','leaves_1','leaves_2','leaves_3','leaves_4','leaves_5','leaves_6','leaves_7','leaves_8'];
+

@@ -1,0 +1,65 @@
+.jus_center {
+  display: flex;
+  justify-content: center;
+}
+.jus_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.jus_start {
+  display: flex;
+  justify-content: flex-start;
+}
+.no_pad-left {
+  padding-left: 0;
+  @include respond(tablet_phone){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.no_pad-right {
+  padding-right: 0;
+  @include respond(tablet_phone){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.no_pad-lr {
+  padding-left: 0;
+  padding-right: 0;
+}
+.pad-left {
+  padding-left: 1.5rem;
+}
+.pad-right {
+  padding-right: 1.5rem;
+}
+.pad-lr {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.section-padding {
+  padding: 7.5rem 0;
+  @include respond(tablet_phone){
+    padding: 6rem 0;
+  }
+}
+.no_pad {
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.jus_mobile {
+  @include respond(tablet_phone) {
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+// 
+.jus_center-mobile {
+  @include respond(tablet_phone) {
+    justify-content: center;
+  }
+}

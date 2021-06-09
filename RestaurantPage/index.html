@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/sass/css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <div class="grid wide">
+            <div class="row " >
+              <div class="col l-6 m-4 c-6 no_pad-left">
+                <a href="">
+                <img
+                  src="assets/image/Footer/Group 386.png"
+                  alt=""
+                  class="navbar__logo"
+                /></a>
+              </div>
+              <div class="col l-0 m-0 c-6 no_pad-right">
+                <div class="navbar__btn">
+                  <label for="navbar__mobile-input" class="navbar__btn-icon">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="bars"
+                      class="svg-inline--fa fa-bars fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                      ></path>
+                    </svg>
+                  </label>
+                  <input
+                    type="checkbox"
+                    hidden
+                    class="navbar__input"
+                    id="navbar__mobile-input"
+                  />
+                  <label
+                    for="navbar__mobile-input"
+                    class="navbar__overlay"
+                  ></label>
+                  <div  class="navbar__mobile">
+                    <label
+                      for="navbar__mobile-input"
+                      class="navbar__mobile-close"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="times"
+                        class="svg-inline--fa fa-times fa-w-11"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 352 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                        ></path>
+                      </svg>
+                    </label>
+                    <ul class="navbar__mobile-list">
+                      <li><a href="#" class="navbar__mobile-link">Home</a></li>
+                      <li><a href="#" class="navbar__mobile-link">Menu</a></li>
+                      <li>
+                        <a href="#" class="navbar__mobile-link">Service</a>
+                      </li>
+                      <li>
+                        <a href="#" class="navbar__mobile-link">Sign In</a>
+                      </li>
+                      <li>
+                        <a href="#" class="navbar__mobile-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17.92"
+                            height="22.389"
+                            viewBox="0 0 17.92 22.389"
+                          >
+                            <path
+                              id="Path_1"
+                              data-name="Path 1"
+                              d="M66.715,19.353,65.433,4.917a.617.617,0,0,0-.614-.563H62.183a4.423,4.423,0,0,0-8.846,0H50.7a.614.614,0,0,0-.614.563L48.8,19.353c0,.018,0,.037,0,.055a3.19,3.19,0,0,0,3.361,2.981h11.2a3.19,3.19,0,0,0,3.361-2.981A.223.223,0,0,0,66.715,19.353ZM57.76,1.236a3.19,3.19,0,0,1,3.187,3.118H54.573A3.19,3.19,0,0,1,57.76,1.236Zm5.6,19.916h-11.2a1.972,1.972,0,0,1-2.124-1.717L51.263,5.595h2.069V7.472a.618.618,0,1,0,1.236,0V5.595h6.378V7.472a.618.618,0,1,0,1.236,0V5.595h2.069l1.232,13.841A1.975,1.975,0,0,1,63.359,21.152Z"
+                              transform="translate(-48.8)"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <footer class="footer">
+                        <div class="grid wide">
+                          <div class="row">
+                            <div class="col l-4 m-6 c-12 jus_mobile">
+                              <div class="footer__socials">
+                                <img src="assets/image/Footer/Group 386.png" alt="" />
+                                <p class="footer__socials-text">
+                                  Don't miss to subscribe to our new feeds, Kindly fill the form
+                                  bellow.
+                                </p>
+                                <ul class="footer__socials-list">
+                                  <li class="footer__socials-item">
+                                    <a href="" class="jus_center">
+                                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                                    </a>
+                                  </li>
+                                  <li class="footer__socials-item">
+                                    <a href="" class="jus_center">
+                                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                                    </a>
+                                  </li>
+                                  <li class="footer__socials-item">
+                                    <a href="" class="jus_center">
+                                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                    </a>
+                                  </li>
+                                  <li class="footer__socials-item">
+                                    <a href="" class="jus_center">
+                                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest-p" class="svg-inline--fa fa-pinterest-p fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path></svg>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            
+                      </footer>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 m-8 c-0 no_pad-right">
+                <ul class="navbar__menu">
+                  <li><a href="#" class="active">Home</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Sign In</a></li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17.92"
+                        height="22.389"
+                        viewBox="0 0 17.92 22.389"
+                      >
+                        <path
+                          id="Path_1"
+                          data-name="Path 1"
+                          d="M66.715,19.353,65.433,4.917a.617.617,0,0,0-.614-.563H62.183a4.423,4.423,0,0,0-8.846,0H50.7a.614.614,0,0,0-.614.563L48.8,19.353c0,.018,0,.037,0,.055a3.19,3.19,0,0,0,3.361,2.981h11.2a3.19,3.19,0,0,0,3.361-2.981A.223.223,0,0,0,66.715,19.353ZM57.76,1.236a3.19,3.19,0,0,1,3.187,3.118H54.573A3.19,3.19,0,0,1,57.76,1.236Zm5.6,19.916h-11.2a1.972,1.972,0,0,1-2.124-1.717L51.263,5.595h2.069V7.472a.618.618,0,1,0,1.236,0V5.595h6.378V7.472a.618.618,0,1,0,1.236,0V5.595h2.069l1.232,13.841A1.975,1.975,0,0,1,63.359,21.152Z"
+                          transform="translate(-48.8)"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        
+        <!-- Start Hero -->
+        <section class="hero">
+          <div class="grid wide">
+            <div class="row ">
+              <div class="col l-6 m-12 c-12 no_pad-left">
+                <div class="hero__left">
+                  <h1 class="hero__left-title">
+                    All in Good Taste Food With Figo.
+                  </h1>
+                  <p class="hero__left-desc">
+                    Quickly predominate standard compliant architecture and may
+                    have prospective internal or organic sources.
+                  </p>
+                  <div class="hero__left-contact">
+                    <form action="">
+                      <input type="text" placeholder="Enter Your Address" />
+                      <input type="submit" value="Get Started" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 m-12 c-12">
+                <div class="hero__img">
+                  <img src="assets/image/Hero Area/Image.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Hero -->
+        <!-- Start Welcome -->
+        <section class="welcome section-padding">
+          <div id="leaves">
+            <img
+              data-depth="5"
+              class="leaves"
+              src="assets/image/Design Elements/asset-5.png"
+              alt=""
+            />
+          </div>
+          <div class="grid wide">
+            <div class="row ">
+              <div class="col l-6 m-12 c-12 order no_pad-left">
+                <div class="welcome__left">
+                  <img src="./assets/image/Welcome/502.png" alt="" />
+                </div>
+              </div>
+              <div class="col l-6 m-12 c-12 no_pad-right">
+                <div class="welcome__right">
+                  <span class="slogan">Welcome</span>
+                  <h2 class="title">Welcome to Figo Restaurant</h2>
+                  <div class="decs">
+                    <p>
+                      Quickly predominate standards compliants architectures and
+                      prospective internal or "organic" sources. Synergistically
+                      mesh quality quality vectors for one-to-one leadership.
+                    </p>
+                    <p>
+                      Quickly predominate standards compliants architectures and
+                      prospective internal or "organic" sources. Synergistically
+                      mesh quality quality vectors for one-to-one leadership.
+                    </p>
+                  </div>
+                  <button class="btn">Explore Our Story</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Welcome -->
+        
+        <!-- Start Reason -->
+        <section class="reason section-padding">
+          <div id="leaves_1">
+            <img
+              data-depth="3"
+              class="leaves"
+              src="assets/image/Design Elements/2536.png"
+              alt=""
+            />
+          </div>
+          <div class="grid wide">
+            <span class="slogan">Reason</span>
+            <h2 class="title">Why Choose Us?</h2>
+            <div class="row jus_center ">
+              <div class="col l-4 m-6 c-12 no_pad-left">
+                <div class="reason__item">
+                  <img src="assets/image/WhyChooseUs/Icon1.png" alt="" />
+                  <h3 class="reason__item-title">Various Menus</h3>
+                  <p class="reason__item-desc">
+                    Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus
+                    scelerisque ipsum nec commodo.
+                  </p>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12">
+                <div class="reason__item">
+                  <img src="assets/image/WhyChooseUs/Icon2.png" alt="" />
+                  <h3 class="reason__item-title">Pocket Friendly Delivery</h3>
+                  <p class="reason__item-desc">
+                    Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus
+                    scelerisque ipsum nec commodo.
+                  </p>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12 no_pad-right">
+                <div class="reason__item">
+                  <img src="assets/image/WhyChooseUs/Icon3.png" alt="" />
+                  <h3 class="reason__item-title">Best Offers</h3>
+                  <p class="reason__item-desc">
+                    Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus
+                    scelerisque ipsum nec commodo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Reason -->
+        <!-- Start Browse -->
+        <section class="browse section-padding">
+          <div id="leaves_2">
+            <img
+              data-depth="3"
+              class="leaves"
+              src="assets/image/Design Elements/asset-2.png"
+              alt=""
+            />
+          </div>
+          <div class="grid wide">
+            <span class="slogan">Browse</span>
+            <h2 class="title">Explore Our Menu</h2>
+            <div class="row">
+              <div class="col l-3 m-12 c-12 no_pad-left">
+                <div class="browse__menu">
+                  <ul>
+                    <li>
+                      <a href="#" class="active">Breakfast</a>
+                    </li>
+                    <li>
+                      <a href="#">Lunch</a>
+                    </li>
+                    <li>
+                      <a href="#">Dinner</a>
+                    </li>
+                    <li>
+                      <a href="#">Desert</a>
+                    </li>
+                    <li>
+                      <a href="#">Soups</a>
+                    </li>
+                    <li>
+                      <a href="#">Drinks</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-9 m-12 c-12 no_pad-right">
+                <div class="row row_mobile multiple-items">
+                  <div class="col l-4 m-4 c-12" style="width: 300px !important;">
+                    <div class="browse__product">
+                      <div class="overlay">
+                        <ul class="overlay__icon">
+                          <li >
+                          <a href="#" class="jus_center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-bag" class="svg-inline--fa fa-shopping-bag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg>
+                          </a>
+                        </li>
+                          <li>
+                          <a href="#" class="jus_center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+
+                      <img
+                        src="assets/image/ExploreOurMenu/Image1.png"
+                        alt=""
+                        width="270"
+                        height="240"
+                      />
+                      <h3 class="browse__product-title">Chicken Massala</h3>
+                      <div class="browse__product-star">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="94"
+                            height="14"
+                            viewBox="0 0 94 14"
+                          >
+                            <text
+                              id="_"
+                              data-name="    "
+                              transform="translate(0 12)"
+                              fill="#ffb243"
+                              font-size="13"
+                              font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'"
+                            >
+                              <tspan x="0" y="0">    </tspan>
+                            </text>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="browse__product-price">
+                        <span>$100</span>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-4 m-4 c-12" style="width: 300px !important;">
+                    <div class="browse__product">
+                      <div class="overlay">
+                        <ul class="overlay__icon">
+                          <li >
+                          <a href="#" class="jus_center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-bag" class="svg-inline--fa fa-shopping-bag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg>
+                          </a>
+                        </li>
+                          <li>
+                          <a href="#" class="jus_center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+
+                      <img
+                        src="assets/image/ExploreOurMenu/Image2.png"
+                        alt=""
+                        width="270"
+                        height="240"
+                      />
+                      <h3 class="browse__product-title">Western Sunrise</h3>
+                      <div class="browse__product-star">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="94"
+                            height="14"
+                            viewBox="0 0 94 14"
+                          >
+                            <text
+                              id="_"
+                              data-name="    "
+                              transform="translate(0 12)"
+                              fill="#ffb243"
+                              font-size="13"
+                              font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'"
+                            >
+                              <tspan x="0" y="0">    </tspan>
+                            </text>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="browse__product-price">
+                        <span>$100</span>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class= "col l-4 m-4 c-12" style="width: 300px !important;">
+                    <div class="browse__product">
+                      <div class="overlay">
+                        <ul class="overlay__icon">
+                          <li >
+                          <a href="#" class="jus_center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-bag" class="svg-inline--fa fa-shopping-bag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg>
+                          </a>
+                        </li>
+                          <li>
+                          <a href="#" class="jus_center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+
+                      <img
+                        src="assets/image/ExploreOurMenu/Image3.png"
+                        alt=""
+                        width="270"
+                        height="240"
+                      />
+                      <h3 class="browse__product-title">Sandwich Soup</h3>
+                      <div class="browse__product-star">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="94"
+                            height="14"
+                            viewBox="0 0 94 14"
+                          >
+                            <text
+                              id="_"
+                              data-name="    "
+                              transform="translate(0 12)"
+                              fill="#ffb243"
+                              font-size="13"
+                              font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'"
+                            >
+                              <tspan x="0" y="0">    </tspan>
+                            </text>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="browse__product-price">
+                        <span>$100</span>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row jus_end jus_mobile">
+              <div class="col ">
+                <div class="browse__arrow ">
+                  <button class="browse__arrow-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg>
+                  </button>
+                  <button class="browse__arrow-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </section>
+        <!-- End Browse -->
+        <!-- Start history -->
+        <section class="history section-padding">
+          <div id="leaves_3">
+            <img
+              data-depth="3"
+              class="leaves"
+              src="assets/image/Design Elements/asset-1.png"
+              alt=""
+            />
+          </div>
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-6 m-12 c-12 no_pad-left">
+                <div class="history__left">
+                  <span class="slogan">History of Figo</span>
+                  <h2 class="title">We Cook Tradition & Family Recipes</h2>
+                  <div class="decs">
+                    <p>
+                      Quickly predominate standards compliants architectures and
+                      prospective internal or "organic" sources. Synergistically
+                      mesh quality quality vectors for one-to-one leadership.
+                    </p>
+                    <p>
+                      Quickly predominate standards compliants architectures and
+                      prospective internal or "organic" sources. Synergistically
+                      mesh quality quality vectors for one-to-one leadership.
+                    </p>
+                  </div>
+                  <button class="btn">Explore Our Story</button>
+                </div>
+              </div>
+              <div class="col l-6 m-12 c-12 no_pad-right">
+                <div class="history__right">
+                  <img
+                    src="./assets/image/WeCookTraditional/Image1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End history -->
+        <!-- Start Testimonials -->
+        <section class="feed section-padding">
+          <div id="leaves_4">
+            <img
+              data-depth="3"
+              class="leaves"
+              src="assets/image/Design Elements/asset-4.png"
+              alt=""
+            />
+          </div>
+          <span class="slogan">Testimonials</span>
+          <h2 class="title">Food Lover's Say</h2>
+          <div class="grid wide">
+            <div class="row jus_center-mobile">
+              <div
+                class="col l-4 m-6 c-12 jus_start no_pad-left jus_center-mobile"
+              >
+                <div class="feed__container">
+                  <div class="feed__comment">
+                    <p>
+                      Design is an evolutionary process, and filler text is just
+                      one tool in your progress-pushing arsenal. Use it where it
+                      makes sense process.
+                    </p>
+                  </div>
+                  <div class="feed__info">
+                    <img
+                      class="feed__info-avatar"
+                      src="assets/image/FoodLover/Image1.png"
+                      alt=""
+                    />
+                    <div class="feed__info-intro">
+                      <h3>Lurch Schpellchek</h3>
+                      <p>UI & UX @ Microsoft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12 jus_center no_pad-lr jus_center-mobile second " >
+                <div class="feed__container feed__container-second">
+                  <div class="feed__comment">
+                    <p>
+                      Design is an evolutionary process, and filler text is just
+                      one tool in your progress-pushing arsenal. Use it where it
+                      makes sense process.
+                    </p>
+                  </div>
+                  <div class="feed__info">
+                    <img
+                      class="feed__info-avatar"
+                      src="assets/image/FoodLover/Image2.png"
+                      alt=""
+                    />
+                    <div class="feed__info-intro">
+                      <h3>Theodore Handle</h3>
+                      <p>Design Lead @ Shopify</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col l-4 m-6 c-12 jus_end no_pad-right jus_center-mobile third "
+              >
+                <div class="feed__container c4">
+                  <div class="feed__comment">
+                    <p>
+                      The argument in favor of using filler something like this
+                      use real content design.
+                    </p>
+                  </div>
+                  <div class="feed__info">
+                    <img
+                      class="feed__info-avatar"
+                      src="assets/image/FoodLover/Image3.png"
+                      alt=""
+                    />
+                    <div class="feed__info-intro">
+                      <h3>Valentino Morose</h3>
+                      <p>Design Lead @ InVision</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row jus_center-mobile">
+              <div class="col l-6 m-6 c-12 c">
+                <div class="feed__comment">
+                  <p>
+                    Surprisingly, there is a very vocal faction of the design
+                    community that wants to see filler text banished to the
+                    original sources came.
+                  </p>
+                </div>
+                <div class="feed__info">
+                  <img
+                    class="feed__info-avatar"
+                    src="assets/image/FoodLover/Image4.png"
+                    alt=""
+                  />
+                  <div class="feed__info-intro nth4">
+                    <h3>Ingredia Nutrisha</h3>
+                    <p>Linux Things @ Exposure Digital</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 m-6 c-12 c">
+                <div class="c1">
+                  <div class="feed__comment">
+                    <p>
+                      The ultimate purpose of any digital product, whether a
+                      website, app, or HTML email, is showcase great design.
+                    </p>
+                  </div>
+                  <div class="feed__info">
+                    <img
+                      class="feed__info-avatar"
+                      src="assets/image/FoodLover/Image5.png"
+                      alt=""
+                    />
+                    <div class="feed__info-intro">
+                      <h3>Hermann P. Schnitzel</h3>
+                      <p>Sr.Designer @ Stepsize</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Testimonials -->
+        <!-- Start News -->
+        <section class="news section-padding">
+          <div class="grid wide">
+            <span class="slogan">News</span>
+            <h2 class="title">Latest News</h2>
+            <div class="row">
+              <div class="col l-4 m-6 c-12 ">
+                <div class="news__item">
+                  <img src="assets/image/LatestNews/Image1.png" alt="" />
+                  <h3 class="news__item-title">Spain Appetizer</h3>
+                  <p class="news__item-desc">
+                    Quickly of predominate and standards compliiants and an
+                    architectures.
+                  </p>
+                  <a href="#" class="news__item-more">Read More</a>
+                </div>
+              </div>
+
+              <div class="col l-4 m-6 c-12 ">
+                <div class="news__item">
+                  <img src="assets/image/LatestNews/Image2.png" alt="" />
+                  <h3 class="news__item-title">Wine And Cheese</h3>
+                  <p class="news__item-desc">
+                    Quickly of predominate and standards compliiants and an
+                    architectures.
+                  </p>
+                  <a href="#" class="news__item-more">Read More</a>
+                </div>
+              </div>
+
+              <div class="col l-4 m-6 c-12 ">
+                <div class="news__item">
+                  <img src="assets/image/LatestNews/Image3.png" alt="" />
+                  <h3 class="news__item-title">Cups Of Coffee</h3>
+                  <p class="news__item-desc">
+                    Quickly of predominate and standards compliiants and an
+                    architectures.
+                  </p>
+                  <a href="#" class="news__item-more">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End News -->
+        <!-- Start Subscription -->
+        <section class="subcribe section-padding">
+          <div id="leaves_5">
+            <img
+              data-depth="3"
+              class="leaves"
+              src="assets/image/Design Elements/asset-3.png"
+              alt=""
+            />
+          </div>
+          <div id="leaves_6">
+            <img
+              data-depth="3"
+              class="leaves"
+              src="assets/image/Design Elements/asset-2.png"
+              alt=""
+            />
+          </div>
+          <span class="slogan">Subscription</span>
+          <h2 class="title">Wants to Get Update?</h2>
+          <div class="subcribe__form">
+            <form action="">
+              <input type="text" placeholder="Enter Your Email Address" />
+              <button type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.091"
+                  height="11.073"
+                  viewBox="0 0 16.091 11.073"
+                >
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M15.872,46.924l-4.789-4.789a.748.748,0,1,0-1.058,1.058L13.537,46.7H.748a.748.748,0,1,0,0,1.5H13.537l-3.511,3.511a.748.748,0,0,0,1.058,1.058l4.788-4.789A.748.748,0,0,0,15.872,46.924Z"
+                    transform="translate(0 -41.916)"
+                    fill="#fff"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- End Subscription -->
+      </main>
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div id="leaves_7">
+          <img
+            data-depth="3"
+            class="leaves"
+            src="assets/image/Design Elements/2535.png"
+            alt=""
+          />
+        </div>
+        <div id="leaves_8">
+          <img
+            data-depth="3"
+            class="leaves"
+            src="assets/image/Design Elements/15.png"
+            alt=""
+          />
+        </div>
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-4 m-6 c-12 jus_mobile">
+              <div class="footer__socials">
+                <img src="assets/image/Footer/Group 386.png" alt="" />
+                <p class="footer__socials-text">
+                  Don't miss to subscribe to our new feeds, Kindly fill the form
+                  bellow.
+                </p>
+                <ul class="footer__socials-list">
+                  <li class="footer__socials-item">
+                    <a href="" class="jus_center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                    </a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a href="" class="jus_center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                    </a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a href="" class="jus_center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    </a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a href="" class="jus_center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest-p" class="svg-inline--fa fa-pinterest-p fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l-2 m-6 c-12 jus_mobile jus_center">
+              <div class="footer__menu">
+                <h3>Our Menu</h3>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item"><a href="#"> Lunch </a></li>
+                  <li class="footer__menu-item"><a href="#"> Dinner </a></li>
+                  <li class="footer__menu-item"><a href="#"> Catering </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l-3 m-6 c-12 jus_mobile jus_center">
+              <div class="footer__link">
+                <h3>Link</h3>
+
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item"><a href="#"> About Us </a></li>
+                  <li class="footer__menu-item">
+                    <a href="#"> Terms Of Use </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#"> Privacy Policy </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l-3 m-6 c-12 jus_mobile jus_end">
+              <div class="footer__contact">
+                <h3>Contact</h3>
+
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a href="#"> +8801622010442 </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#"> info@restaurant.com </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#"> Daudkandi, Comilla </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"> </script>
+    <script>
+    
+      $('.multiple-items').slick({ 
+        dots: true,      
+        infinite: true,       
+        speed: 300,    
+        slidesToScroll: 3,   
+        slidesToShow: 1,       
+        centerMode: true,       
+        variableWidth: true,      
+         navigation:true,      
+        });
+		
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

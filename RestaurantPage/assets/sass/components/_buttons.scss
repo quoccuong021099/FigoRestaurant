@@ -1,0 +1,17 @@
+.btn {
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: 5px;
+    border: none;
+    outline: navajowhite;
+    cursor: pointer;
+    padding: 2.25rem 4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: $text-font;
+  }
+  .btn:hover{
+    background-color: $secondary-color;
+
+  }
+  
