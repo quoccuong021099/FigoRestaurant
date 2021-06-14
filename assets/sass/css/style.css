@@ -814,9 +814,6 @@ html a {
   position: absolute;
   left: 0;
 }
-.slick-prev::before:hover {
-  color: #fff !important;
-}
 
 .slick-next::before {
   content: " ❯" !important;

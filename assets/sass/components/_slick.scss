@@ -50,9 +50,7 @@
   height: 50px  !important;
   position: absolute;
   left: 0;
-  &:hover{
-      color: $white-color !important;
-  }
+ 
 }
 .slick-next::before {
   content: " \276F" !important;
@@ -61,4 +59,5 @@
   height: 50px  !important;
   position: absolute;
   left: 0;
+  
 }
