@@ -51,7 +51,6 @@ html body {
 }
 html img {
   display: block;
-  max-width: 100%;
 }
 html a {
   display: block;
@@ -953,8 +952,8 @@ html a {
 .decs p {
   color: #212529;
   font-family: "Poppins";
-  font-size: 1.7rem;
-  line-height: 3.5rem;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
 }
 .wrapper {
   overflow: hidden;
@@ -1489,14 +1488,22 @@ html a {
 }
 .wrapper main .history__right {
   background-color: #f8fbf5;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
   height: 100%;
+}
+@media only screen and (max-width: 1023px) {
+  .wrapper main .history__right {
+    margin-top: 4rem;
+  }
 }
 .wrapper main .history__right img {
   margin: 0 auto;
 }
 @media only screen and (max-width: 1023px) {
   .wrapper main .history__right img {
-    margin-top: 4rem;
+    padding: 0;
   }
 }
 .wrapper main .feed {
